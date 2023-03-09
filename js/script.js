@@ -1,8 +1,7 @@
 
 function generateQuote(){
 	var quote = ["Look to those who walked before to lead those who walk after", 
-"A journey of a thousand miles begins with a single step" , "Wheresoever you go, go with all your heart.", 
-"Go ahead, make my day.", "Listen to them. Children of the night. What music they make."];
+"A journey of a thousand miles begins with a single step" , "Wheresoever you go, go with all your heart."];
 
 var randNum = Math.ceil(Math.random() * 4);
 	document.getElementById("quote").innerText = quote[randNum];
