@@ -1,3 +1,7 @@
+ .about
+ {
+  width: 50%;
+ }
  body 
  {
    font: 400 15px/1.8 Lato, sans-serif;
@@ -194,7 +198,7 @@
  .page-container 
  {
   position: relative;
-  height: 100%;
+  height: fit-content;
 }
 
  footer a {
