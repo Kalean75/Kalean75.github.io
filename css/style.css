@@ -194,7 +194,7 @@
  .page-container 
  {
   position: relative;
-  height: auto;
+  height: 100%;
 }
 
  footer a {
