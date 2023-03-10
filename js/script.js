@@ -21,7 +21,7 @@ $(document).ready(function(){
         $(window).scroll(function () {
 
                  // set distance user needs to scroll before fadeIn
-            if ($(this).scrollTop() > 100) {
+            if ($(this).scrollTop() > 90) {
                 $('.navbar-fade').fadeIn("fast");
             } else {
                 $('.navbar-fade').fadeOut();

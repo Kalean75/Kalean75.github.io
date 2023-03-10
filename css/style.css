@@ -1,6 +1,6 @@
  body {
     font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+    color: #4b4747;
   }
   .container-fluid
   {
@@ -98,6 +98,18 @@ height: 100%;
     background-color: #fff;
     color: #000;
   }
+  .courseworkSLCC
+  {
+    float: left;
+    clear: left;
+    width: 50%;
+  }
+  .courseworkUU
+  {
+    float: right;
+    clear: right;
+    width: 50%;
+  }
   .quotebtn
   {
 	  color: #050505;
@@ -105,7 +117,8 @@ height: 100%;
   .nav-tabs li a {
     color: #777;
   }
-  .navbar {
+  .navbar 
+  {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
     background-color: #2d2d30;
