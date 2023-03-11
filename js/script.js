@@ -2,7 +2,7 @@
 function generateQuote() 
 {
   var quote = ["\"Look to those who walked before to lead those who walk after\"",
-    "\"A journey of a thousand miles begins with a single step\"", "\"Wheresoever you go, go with all your heart.\"","\"Fortune favors the bold!\""];
+    "\"A journey of a thousand miles begins with a single step\"", "\"Wherever you go, go with all your heart.\"","\"Fortune favors the bold!\""];
   var min= 0;
   var max = quote.length - 1;
   var randNum = Math.floor(Math.random() * (max-min + 1)+min);
