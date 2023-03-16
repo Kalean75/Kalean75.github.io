@@ -1,8 +1,8 @@
- .about
+ #about
  {
   width: 50%;
  }
- .about p
+ #about p
  {
   text-align: left;
  }
@@ -34,12 +34,6 @@
    font-size: 20px;
    color: #111;
  }
-
- h1.learning-outcomes {
-   text-align: center;
-   border-bottom: 1px solid black;
- }
-
  .video-container {
    position: relative;
    padding-bottom: 56.25%;
@@ -57,26 +51,6 @@
    width: 100%;
    height: 100%;
  }
-
- .about-me {
-   width: 50%;
-   float: left;
-   clear: left;
-   color: black;
-   background-color: #A4A4A4;
-   border-radius: 100px 0px 0px 0px;
-   border-right: 1px solid black;
- }
- .hobbies {
-   width: 50%;
-   float: right;
-   clear: right;
-   color: black;
-   background-color: #A4A4A4;
-   border-radius: 0px 100px 0px 0px;
-   border-left: 1px solid black;
- }
-
  .container {
    padding: 80px 120px;
  }
@@ -122,20 +96,16 @@
    color: #000;
  }
 
- .courseworkSLCC {
+ #courseworkSLCC {
    float: left;
    clear: left;
    width: 50%;
  }
 
- .courseworkUU {
+ #courseworkUU {
    float: right;
    clear: right;
    width: 50%;
- }
-
- .quotebtn {
-   color: #050505;
  }
 
  .nav-tabs li a {

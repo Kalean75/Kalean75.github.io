@@ -1,10 +1,23 @@
-.prototypes
+#prototypes
 {
-  width: 50%;
+  min-width: 50%;
   height: 100%;
 }
-.released
+#released
 {
-  width: 50%;
+  min-width: 50%;
   height: 100%;
+}
+
+#WhisWitch
+{
+  background-color: #CBC3E3;
+}
+#Riff
+{
+  background-color: pink;
+}
+#sandf
+{
+  background: orange url("/img/SandF.png");
 }
