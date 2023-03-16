@@ -15,7 +15,8 @@
 }
 #Riff
 {
-  background: pink url("/img/Riff.png");;
+  background: pink url("/img/Riff.png");
+  color:white;
 }
 #sandf
 {
