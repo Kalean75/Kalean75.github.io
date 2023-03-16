@@ -1,12 +1,16 @@
 #prototypes
 {
   min-width: 50%;
-  height: 100%;
+  min-height: 100%;
+  border-right-color: black 1px;
+  background: grey;
 }
 #released
 {
   min-width: 50%;
-  height: 100%;
+  min-height: 100%;
+  border-left: black 1px;
+  background: grey;
 }
 
 #WhisWitch
