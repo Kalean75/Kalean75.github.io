@@ -7,11 +7,13 @@ function generateQuote()
   var max = quote.length - 1;
   var randNum = Math.floor(Math.random() * (max-min + 1)+min);
   document.getElementById("quote").innerText = quote[randNum];
+  document.getElementById("quote").style.fontStyle="italic";
 }
 
 
 (function ($) {
-  $(document).ready(function () {
+  $(document).ready(function () 
+  {
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
