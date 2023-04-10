@@ -9,7 +9,10 @@
   min-height: 50%;
 }
 
-
+#frame
+{
+  height: 100%;
+}
 #WhisWitch
 {
   background-color: #CBC3E3;
