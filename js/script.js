@@ -1,17 +1,36 @@
 
-function generateQuote() 
-{
+function generateQuote() {
   var quote = ["\"Look to those who walked before to lead those who walk after\"",
-    "\"A journey of a thousand miles begins with a single step\"", "\"Wherever you go, go with all your heart.\"","\"Fortune favors the bold!\""];
-  var min= 0;
+    "\"A journey of a thousand miles begins with a single step\"", "\"Wherever you go, go with all your heart.\"", "\"Fortune favors the bold!\""];
+  var min = 0;
   var max = quote.length - 1;
-  var randNum = Math.floor(Math.random() * (max-min + 1)+min);
+  var randNum = Math.floor(Math.random() * (max - min + 1) + min);
   document.getElementById("quote").innerText = quote[randNum];
-  document.getElementById("quote").style.fontStyle="italic";
+  document.getElementById("quote").style.fontStyle = "italic";
 }
 
 
-(function ($) {
+//Jquery
+(function ($) 
+{
+  $(".header").click(function () {
+
+    $header = $(this);
+    //getting the next element
+    $graphics = $header.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $graphics.slideToggle(500, function () {
+      //execute this after slideToggle is done
+      //change text of header based on visibility of content div
+      $header.text(function () {
+        //change text based on condition
+        return $graphics.is(":visible"); //? "Collapse" : "Expand";
+      });
+    });
+  
+  });
+  
+  //fade in navbar
   $(document).ready(function () 
   {
     // Initialize Tooltip

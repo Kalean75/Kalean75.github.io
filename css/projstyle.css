@@ -1,28 +1,45 @@
-#prototypes
-{
+#prototypes {
   min-width: 50%;
   min-height: 500%;
 }
-#released
-{
+
+#released {
   min-width: 50%;
-  min-height: 50%;
+  min-height: 500%;
 }
 
-#frame
-{
+#frame {
   height: 100%;
 }
-#WhisWitch
-{
+
+#WhisWitch {
   background-color: #CBC3E3;
 }
-#Riff
-{
+
+#Riff {
   background: pink url("/img/Riff.png");
-  color:white;
+  color: white;
 }
-#sandf
-{
+
+#sandf {
   background: orange url("/img/SandF.png");
+}
+
+#wrap {
+  width: 600px;
+  height: 390px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#frame {
+  width: 800px;
+  height: 520px;
+  border: 1px solid black;
+}
+
+#frame {
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
 }
