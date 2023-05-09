@@ -9,6 +9,34 @@ function generateQuote() {
   document.getElementById("quote").style.fontStyle = "italic";
 }
 
+//Temporary display function
+function display() 
+{
+  var x = document.getElementById("content");
+  if (x.style.display === "none") 
+  {
+    x.style.display = "block";
+  } 
+  else 
+  {
+    x.style.display = "none";
+  }
+}
+
+//Temporary display function
+function display2() 
+{
+  var x = document.getElementById("content2");
+  if (x.style.display === "none") 
+  {
+    x.style.display = "block";
+  } 
+  else 
+  {
+    x.style.display = "none";
+  }
+}
+
 
 //Jquery
 (function ($) 

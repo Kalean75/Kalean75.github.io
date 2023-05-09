@@ -115,24 +115,24 @@
 						</iframe>
 					</div>
 					<div id="">
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
-					<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
+						<p>&nbsp</p>
 					</div>
 				</div>
 				<div id="released" class="col-sm-6" style="background-color: green;">
@@ -183,52 +183,54 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class ="header" id = "header">
+				<div class="header" id="header" onclick="display()">
 					<h2>Graphics</h2>
-					<h3> Water Rendering </h3>
 				</div>
-				<div id="graphics" class="graphics col-sm-12">
-					<div id="carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel" data-slide-to="1"></li>
-							<li data-target="#carousel" data-slide-to="2"></li>
-							<li data-target="#carousel" data-slide-to="3"></li>
-							<li data-target="#carousel" data-slide-to="4"></li>
-							<li data-target="#carousel" data-slide-to="5"></li>
-						</ol>
+				<div class="content" id = "content">
+					<h3> Water Rendering </h3>
+					<div id="graphics" class="graphics col-sm-12">
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+								<li data-target="#carousel" data-slide-to="3"></li>
+								<li data-target="#carousel" data-slide-to="4"></li>
+								<li data-target="#carousel" data-slide-to="5"></li>
+							</ol>
 
-						<div class="carousel-inner">
-							<div class="item active">
-								<h3>Texture</h3>
-								<img src="img/Texture.png" class="img-responsive format-img" alt="Image">
-							</div>
-							<div class="item">
-								<h3>displacement</h3>
-								<img src="img/displacement.png" class="img-responsive format-img" alt="Image">
-							</div>
+							<div class="carousel-inner">
+								<div class="item active">
+									<h3>Texture</h3>
+									<img src="img/Texture.png" class="img-responsive format-img" alt="Image">
+								</div>
+								<div class="item">
+									<h3>displacement</h3>
+									<img src="img/displacement.png" class="img-responsive format-img" alt="Image">
+								</div>
 
-							<div class="item">
-								<h3>Transparency</h3>
-								<img src="img/Transparency.png" class="img-responsive format-img" alt="Image">
+								<div class="item">
+									<h3>Transparency</h3>
+									<img src="img/Transparency.png" class="img-responsive format-img" alt="Image">
+								</div>
+								<div class="item">
+									<h3>Reflection</h3>
+									<img src="img/Reflection.png" class="img-responsive format-img" alt="Image">
+								</div>
+								<div class="item">
+									<h3>overall</h3>
+									<img src="img/overall.png" class="img-responsive format-img" alt="Image">
+								</div>
 							</div>
-							<div class="item">
-								<h3>Reflection</h3>
-								<img src="img/Reflection.png" class="img-responsive format-img" alt="Image">
-							</div>
-							<div class="item">
-								<h3>overall</h3>
-								<img src="img/overall.png" class="img-responsive format-img" alt="Image">
-							</div>
+							<a class="left carousel-control" href="#carousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
-						<a class="left carousel-control" href="#carousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#carousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="sr-only">Next</span>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -241,22 +243,26 @@
 					</div>
 				</div>
 			</div>-->
-			<div class="row" id = "geology">
-				<h1> Other Projects </h1>
-				<h2>Geology papers</h2>
-				<div id="PG" class="col-sm-6">
-					<a href="https://kalean75.github.io/ParowanGapReport.pdf" download>
-						<h2 Align="center">Parowan Gap Geologic Report</h2>
-					</a>
-					<iframe id="frame" src="https://kalean75.github.io/pdfs/ParowanGapReport.pdf">
-					</iframe>
+			<div class="row" id="geology">
+				<div class="header" id="header" onclick="display2()">
+					<h1> Other Projects</h1>
+					<h2>Geology papers</h2>
 				</div>
-				<div id="RR" class="col-sm-6">
-					<a href="https://kalean75.github.io/RaftRiverReport.pdf" download>
-						<h2 Align="center">Raft Rivers Geologic Report</h2>
-					</a>
-					<iframe id="frame" src="https://kalean75.github.io/pdfs/RaftRiverReport.pdf">
-					</iframe>
+				<div class="content2" id="content2">
+					<div id="PG" class="col-sm-6">
+						<a href="https://kalean75.github.io/ParowanGapReport.pdf" download>
+							<h2 Align="center">Parowan Gap Geologic Report</h2>
+						</a>
+						<iframe id="frame" src="https://kalean75.github.io/pdfs/ParowanGapReport.pdf">
+						</iframe>
+					</div>
+					<div id="RR" class="col-sm-6">
+						<a href="https://kalean75.github.io/RaftRiverReport.pdf" download>
+							<h2 Align="center">Raft Rivers Geologic Report</h2>
+						</a>
+						<iframe id="frame" src="https://kalean75.github.io/pdfs/RaftRiverReport.pdf">
+						</iframe>
+					</div>
 				</div>
 			</div>
 		</div>

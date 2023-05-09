@@ -53,3 +53,17 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+#content
+{
+  display: none;
+  cursor:pointer;
+}
+#content2
+{
+  display: none;
+  cursor:pointer;
+}
+#header
+{
+  cursor:pointer;
+}
