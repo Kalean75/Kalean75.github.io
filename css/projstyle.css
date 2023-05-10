@@ -1,11 +1,15 @@
 #prototypes {
-  min-width: 50%;
+  width: 50%;
   min-height: 500%;
+  text-align: center;
+  padding: auto;
 }
 
 #released {
-  min-width: 50%;
+  width: 50%;
   min-height: 500%;
+  text-align: center;
+  padding: auto;
 }
 
 #frame {
