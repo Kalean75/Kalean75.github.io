@@ -10,54 +10,35 @@ function generateQuote() {
 }
 
 //Temporary display function
-function display() 
+/*function display() 
 {
   var x = document.getElementById("content");
-  if (x.style.display === "none") 
-  {
+  if (x.style.display === "none") {
     x.style.display = "block";
-  } 
-  else 
-  {
+  }
+  else {
     x.style.display = "none";
   }
-}
+}*/
 
 //Temporary display function
-function display2() 
+/*function display2() 
 {
   var x = document.getElementById("content2");
   if (x.style.display === "none") 
   {
     x.style.display = "block";
-  } 
+  }
   else 
   {
     x.style.display = "none";
   }
-}
-
+}*/
 
 //Jquery
 (function ($) 
 {
-  $(".header").click(function () {
 
-    $header = $(this);
-    //getting the next element
-    $graphics = $header.next();
-    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $graphics.slideToggle(500, function () {
-      //execute this after slideToggle is done
-      //change text of header based on visibility of content div
-      $header.text(function () {
-        //change text based on condition
-        return $graphics.is(":visible"); //? "Collapse" : "Expand";
-      });
-    });
-  
-  });
-  
   //fade in navbar
   $(document).ready(function () 
   {
@@ -67,6 +48,23 @@ function display2()
     // hide navbar
     $(".navbar-fade").hide();
 
+    $('.header').click(function () 
+    {
+
+      $header = $(this);
+      //getting the next element
+      $graphics = $header.next();
+      //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+      $graphics.slideToggle(500, function () 
+      {
+        //execute this after slideToggle is done
+          return $graphics.is(":visible");
+      });
+      });
+    //change icon on collapse/expand
+    $('.glyphicon').click(function () {
+      $(this).toggleClass("glyphicon-plus-sign").toggleClass("glyphicon-minus-sign");
+    });
     // fade in .navbar
     $(function () {
       $(window).scroll(function () {
