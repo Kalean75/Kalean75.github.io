@@ -54,12 +54,19 @@ function generateQuote() {
       $header = $(this);
       //getting the next element
       $graphics = $header.next();
+      //$graphics2 = $graphics.next();
       //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
       $graphics.slideToggle(500, function () 
       {
         //execute this after slideToggle is done
           return $graphics.is(":visible");
       });
+
+      /*$graphics2.slideToggle(500, function () 
+      {
+        //execute this after slideToggle is done
+          return $graphics2.is(":visible");
+      });*/
       });
     //change icon on collapse/expand
     $('.glyphicon').click(function () {
