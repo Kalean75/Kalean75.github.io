@@ -69,12 +69,15 @@ function generateQuote() {
       });
       });
     //change icon on collapse/expand
-    $('.glyphicon').click(function () {
+    $('.glyphicon').click(function () 
+    {
       $(this).toggleClass("glyphicon-plus-sign").toggleClass("glyphicon-minus-sign");
     });
     // fade in .navbar
-    $(function () {
-      $(window).scroll(function () {
+    $(function () 
+    {
+      $(window).scroll(function () 
+      {
 
         // set distance user needs to scroll before fadeIn
         if ($(this).scrollTop() > 90) {
