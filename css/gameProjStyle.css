@@ -1,0 +1,86 @@
+#prototypes {
+   /* width: 33%;*/
+  width: 33%;
+  min-height: 500%;
+  text-align: center;
+  padding: auto;
+  /*background-color: pink;*/
+}
+
+#released {
+ /* width: 33%;*/
+  width: 33%;
+  min-height: 500%;
+  text-align: center;
+  padding: auto;
+  /*background-color: green;*/
+}
+#jams {
+  width: 33%;
+  min-height: 500%;
+  text-align: center;
+  padding: auto;
+  /*background-color: green;*/
+}
+
+#frame {
+  height: 100%;
+}
+
+#WhisWitch {
+  background: #CBC3E3 url("/img/WW.png");
+  color: white;
+}
+
+#Riff {
+  background: pink url("/img/Riff.png");
+  color: white;
+}
+
+#sandf {
+  background: orange url("/img/SandF.png");
+}
+
+#Aether
+{
+  background: purple url("");
+  color: white;
+}
+
+#wrap {
+  width: 600px;
+  height: 390px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#frame {
+  width: 800px;
+  height: 520px;
+  border: 1px solid black;
+}
+
+#frame {
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+}
+
+#geology {
+  background: orangered url("/img/DelicateArch.jpg");
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: auto;
+  height: auto;
+}
+
+#content 
+{
+  display: none;
+}
+
+#header {
+  cursor: pointer;
+}
