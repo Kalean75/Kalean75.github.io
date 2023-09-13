@@ -135,6 +135,7 @@
    letter-spacing: 4px;
    opacity: 0.9;
    width: 100%;
+   z-index: 1;
  }
 
  .navbar li a,
