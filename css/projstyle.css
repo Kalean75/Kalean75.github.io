@@ -4,6 +4,7 @@
   transition: 0.3s;
   cursor: pointer;
   margin: 10px;
+  max-height: 500px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -22,7 +23,8 @@
 
 img {
   max-width: 100%;
-  max-height: auto;;
+  height: auto;
+  max-height: 80%;
 }
 
 #wrap {
