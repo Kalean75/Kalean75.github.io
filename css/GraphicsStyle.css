@@ -148,7 +148,7 @@
    padding: 32px;
    min-width: auto;
    max-width: 100%;
-   position: relative;
+   position: fixed;
    bottom: 0;
    left: 0;
    right: 0;

@@ -36,48 +36,40 @@ function generateQuote() {
 }*/
 
 //Jquery
-(function ($) 
-{
+(function ($) {
 
   //fade in navbar
-  $(document).ready(function () 
-  {
+  $(document).ready(function () {
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
     // hide navbar
     $(".navbar-fade").hide();
 
-    $('.header').click(function () 
-    {
+    $('.header').click(function () {
 
       $header = $(this);
       //getting the next element
       $graphics = $header.next();
       $graphics2 = $graphics.next();
       //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-      $graphics.slideToggle(500, function () 
-      {
+      $graphics.slideToggle(500, function () {
         //execute this after slideToggle is done
-          return $graphics.is(":visible");
+        return $graphics.is(":visible");
       });
 
-      $graphics2.slideToggle(500, function () 
-      {
+      $graphics2.slideToggle(500, function () {
         //execute this after slideToggle is done
-          return $graphics2.is(":visible");
+        return $graphics2.is(":visible");
       });
-      });
+    });
     //change icon on collapse/expand
-    $('.glyphicon').click(function () 
-    {
+    $('.glyphicon').click(function () {
       $(this).toggleClass("glyphicon-plus-sign").toggleClass("glyphicon-minus-sign");
     });
     // fade in .navbar
-    $(function () 
-    {
-      $(window).scroll(function () 
-      {
+    $(function () {
+      $(window).scroll(function () {
 
         // set distance user needs to scroll before fadeIn
         if ($(this).scrollTop() > 90) {

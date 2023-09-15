@@ -9,7 +9,7 @@
 
 #released {
  /* width: 33%;*/
-  width: 33%;
+  width: 50%;
   min-height: 500%;
   text-align: center;
   padding: auto;
@@ -78,7 +78,7 @@
 
 #content 
 {
-  display: none;
+  display: block;
 }
 
 #header {
