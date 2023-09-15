@@ -1,0 +1,15 @@
+.bg-3
+{
+    background-color: antiquewhite;
+}
+body
+{
+    background-color: blueviolet; 
+    background-image: url("../img/EagleProject/AmericanFlag.png") !important;
+    background-size: cover;
+}
+p
+{
+    text-align: center;
+    padding: 10px;
+}
