@@ -4,10 +4,12 @@
 }
 body
 {
-    background-color: blueviolet; 
-    background-image: url("../img/EagleProject/AmericanFlag.png") !important;
-    background-size: cover;
+    background-color: whitesmoke; 
+    background-image: url("./img/EagleProject/AmericanFlag.png") !important;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
+
 p
 {
     text-align: center;
