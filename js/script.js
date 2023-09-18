@@ -9,12 +9,10 @@ function generateQuote() {
   document.getElementById("quote").style.fontStyle = "italic";
 }
 
-function changePhoto()
-{
+function changePhoto() {
   var elements = document.getElementsByClassName("DWIcon");
-  for(i = 0; i < elements; i++)
-  {
-    elements[i].value ="./img/lettuce.jpg"
+  for (i = 0; i < elements; i++) {
+    elements[i].value = "./img/lettuce.jpg"
   }
 
 }
@@ -48,9 +46,9 @@ function changePhoto()
       });
     });
     //change icon on collapse/expand
-    $('.glyphicon').click(function () {
-      $(this).toggleClass("glyphicon-plus-sign").toggleClass("glyphicon-minus-sign");
-    });
+    //$('.glyphicon').click(function () {
+    //$(this).toggleClass("glyphicon-plus-sign").toggleClass("glyphicon-minus-sign");
+    //});
     // fade in .navbar
     $(function () {
       $(window).scroll(function () {
