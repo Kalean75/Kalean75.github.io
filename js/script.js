@@ -9,31 +9,15 @@ function generateQuote() {
   document.getElementById("quote").style.fontStyle = "italic";
 }
 
-//Temporary display function
-/*function display() 
+function changePhoto()
 {
-  var x = document.getElementById("content");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var elements = document.getElementsByClassName("DWIcon");
+  for(i = 0; i < elements; i++)
+  {
+    elements[i].value ="./img/lettuce.jpg"
   }
-  else {
-    x.style.display = "none";
-  }
-}*/
 
-//Temporary display function
-/*function display2() 
-{
-  var x = document.getElementById("content2");
-  if (x.style.display === "none") 
-  {
-    x.style.display = "block";
-  }
-  else 
-  {
-    x.style.display = "none";
-  }
-}*/
+}
 
 //Jquery
 (function ($) {
@@ -79,7 +63,6 @@ function generateQuote() {
         }
       });
     });
-
 
     // Add smooth scrolling to navbar + footer
     $(".navbar a, footer a[href='#myPage']").on('click', function (event) {

@@ -12,10 +12,29 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   cursor: pointer;
 }
+.projectCard:hover .description
+{
+  visibility: visible;
+  opacity: 0.5;
+}
 .projectCard h1
 {
   color: grey;
 }
+.description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(77, 83, 86, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .5s, visibility .5s;
+}
+
 
 /*h1
 {

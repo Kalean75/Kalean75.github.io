@@ -22,7 +22,7 @@
 	<div class="page-container">
 		<nav class="navbar navbar-default navbar-fixed-top navbar-fade">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#myPage">DW</a>
+				<a class="navbar-brand" href="#myPage" onclick="changePhoto()"><img name = "DWIcon">DW</img></a>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-center">
 						<li class="active"><a href="https://kalean75.github.io/"><span
@@ -48,7 +48,7 @@
 		</nav>
 		<div class="container-fluid text-center">
 			<nav class="navbar navbar-default">
-				<a class="navbar-brand" href="#myPage">DW</a>
+				<a class="navbar-brand" href="#myPage" onclick="changePhoto()"><img name = "DWIcon">DW</img></a>
 				<div class="collapse navbar-collapse" id="Navbar">
 					<ul class="nav navbar-nav navbar-center">
 						<li class="active"><a href="https://kalean75.github.io/"><span
@@ -107,21 +107,46 @@
 			<div id="technologies">
 				<div class="row">
 					<div class="content">
-						<div class="col-sm-3 projectCard">
-							<img src="./img/Technologies/Azure.png">
-						</div>
-						<div class="col-sm-3 projectCard">
-							<img src="./img/Technologies/Docker.png">
-						</div>
-						<div class="col-sm-3 projectCard">
-							<img src="./img/Technologies/Jira.png">
-						</div>
-						<div class="col-sm-3 projectCard">
-							<img src="./img/Technologies/Unity.png" style="height: 100%; width: auto;">
-						</div>
-						<div class="col-sm-3 projectCard">
-							<img src="./img/Technologies/Unreal.png" style="height: 100%; width: auto;">
-						</div>
+							<div class="col-sm-3 projectCard">
+								<a href="https://azure.microsoft.com">
+								<img src="./img/Technologies/Azure.png">
+								<p class=description>
+									Microsoft Azure
+								</p>
+							</a>
+							</div>
+							<div class="col-sm-3 projectCard">
+								<a href="https://www.docker.com/">
+								<img src="./img/Technologies/Docker.png">
+								<p class=description>
+									Docker
+								</p>
+							</a>
+							</div>
+							<div class="col-sm-3 projectCard">
+								<a href="https://www.atlassian.com/software/jira">
+								<img src="./img/Technologies/Jira.png">
+								<p class=description>
+									Atlassian Jira
+								</p>
+							</a>
+							</div>
+							<div class="col-sm-3 projectCard">
+								<a href="https://unity.com/">
+								<img src="./img/Technologies/Unity.png" style="height: 100%; width: auto;">
+								<p class=description>
+									Unity Game Engine
+								</p>
+							</a>
+							</div>
+							<div class="col-sm-3 projectCard">
+								<a href="https://www.unrealengine.com/en-US/">
+								<img src="./img/Technologies/Unreal.png" style="height: 100%; width: auto;">
+								<p class=description>
+									Unreal Game Engine
+								</p>
+							</a>
+							</div>
 					</div>
 				</div>
 
@@ -173,7 +198,7 @@
 				<span class="glyphicon glyphicon-chevron-up"></span>
 			</a>
 		</footer>
-</div>
+	</div>
 </body>
 
 </html>
