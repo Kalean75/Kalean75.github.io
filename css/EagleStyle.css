@@ -1,18 +1,14 @@
-.bg-3
-{
-    background-color: antiquewhite;
+.bg-3 {
+  background-color: antiquewhite;
 }
-body
-{
-    background-color: whitesmoke; 
-    background: url("../img/EagleProject/AmericanFlag.png") !important;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
+body {
+  background-color: whitesmoke;
+  background: url("../img/EagleProject/AmericanFlag.png") !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-p
-{
-    text-align: center;
-    padding: 10px;
+p {
+  text-align: center;
+  padding: 10px;
 }

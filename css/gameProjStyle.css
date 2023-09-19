@@ -1,5 +1,5 @@
 #prototypes {
-   /* width: 33%;*/
+  /* width: 33%;*/
   width: 100%;
   min-height: 500%;
   text-align: center;
@@ -8,7 +8,7 @@
 }
 
 #released {
- /* width: 33%;*/
+  /* width: 33%;*/
   width: 100%;
   min-height: 500%;
   text-align: center;
@@ -28,7 +28,7 @@
 }
 
 #WhisWitch {
-  background: #CBC3E3 url("/img/Projects/WW.png");
+  background: #cbc3e3 url("/img/Projects/WW.png");
   color: white;
 }
 
@@ -41,8 +41,7 @@
   background: orange url("/img/Projects/SandF.png");
 }
 
-#Aether
-{
+#Aether {
   background: purple url("/img/Projects/AetherPreview.png");
   color: white;
 }
@@ -75,17 +74,14 @@
   overflow: auto;
   height: 100%;
 }
-.RR
-{
+.RR {
   max-width: 50%;
 }
-.PG
-{
+.PG {
   max-width: 50%;
 }
 
-#content 
-{
+#content {
   display: block;
 }
 
