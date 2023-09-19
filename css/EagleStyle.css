@@ -5,8 +5,8 @@
 body
 {
     background-color: whitesmoke; 
-    background:  url("/img/EagleProject/AmericanFlag.png") !important;
-    background-size: 100% auto;
+    background: url("../img/EagleProject/AmericanFlag.png") !important;
+    background-size: 100%;
     background-repeat: no-repeat;
     
 }
