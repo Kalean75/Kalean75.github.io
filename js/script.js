@@ -10,7 +10,7 @@ function generateQuote() {
 }
 
 function changePhoto() {
-  var elements = document.getElementsByClassName("DWIcon");
+  var elements = document.getElementsByClassName("Icon");
   for (i = 0; i < elements; i++) {
     elements[i].value = "./img/lettuce.jpg"
   }

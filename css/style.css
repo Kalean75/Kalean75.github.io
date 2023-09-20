@@ -131,6 +131,11 @@ h4 {
   color: #d5d5d5 !important;
   font-style: italic;
 }
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
 
 .navbar-nav li a:hover {
   color: #fff !important;
@@ -213,11 +218,11 @@ footer a:hover {
 }
 h1
 {
-  font-size: 2vw;
+  font-size: min(4vw,32px);
   text-align: center;
 }
 p{
-  font-size: 1vw;
+  font-size: min(2vw,16px);
 }
 
 .row {
