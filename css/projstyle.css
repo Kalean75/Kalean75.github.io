@@ -17,8 +17,10 @@
   visibility: visible;
   opacity: 0.5;
 }
-.projectCard h1 {
+.projectCard h1 
+{
   color: grey;
+  font-size: min(3vw,32px);
 }
 
 .description {

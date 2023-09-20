@@ -224,6 +224,11 @@ h1
 p{
   font-size: min(2vw,16px);
 }
+.description
+{
+  font-size: min(1vw,16px);
+  text-align: center;
+}
 
 .row {
   width: 100%;
