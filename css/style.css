@@ -29,15 +29,19 @@ html {
 }
 #carousel {
   background: #e4e5e6;
-  height: 50%;
   width: 50%;
+  height:auto;
   text-align: center;
   margin: auto;
 }
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  height: 500px;
+.carousel-inner > .item > a > img 
+{
+  max-height: 300px;
+  min-height: 300px;
+  height: auto;
   width: auto;
+  display: block;
 }
 h3,
 h4 {
