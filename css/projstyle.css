@@ -19,7 +19,7 @@
   width: 100%;
 }
 .projectCard:hover {
-  box-shadow: 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 16px 16px 32px 16px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transform: scale(1.05);
 }
