@@ -4,6 +4,7 @@
 
 #about p {
   text-align: justify;
+  font-size: min(2vw,16px);
 }
 
 body {

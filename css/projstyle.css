@@ -7,6 +7,7 @@
   background-color: whitesmoke;
   max-width: 33%;
   text-align: center;
+  border-radius: 2%;
 }
 
 .projectCard img
@@ -17,6 +18,72 @@
   object-fit: cover;
   width: 100%;
 }
+.projectCard p
+{
+  /*float: right;*/
+}
+
+.cSharp
+{
+  border-style: solid;
+  border-color: green;
+
+}
+
+.cplusplus
+{
+  border-style: solid;
+  border-color: pink;
+
+}
+
+.python
+{
+  border-style: solid;
+  border-color: darkcyan;
+
+}
+
+.java
+{
+  border-style: solid;
+  border-color: orange;
+
+}
+
+.languagecsharp
+{
+  float: left;
+  color: green;
+  position: absolute;
+  bottom: 0;
+  font-size: min(2vw,16px);
+}
+.languagejava
+{
+  float: left;
+  color: orange;
+  position: absolute;
+  bottom: 0;
+  font-size: min(2vw,16px);
+}
+.languagepython
+{
+  float: left;
+  color: darkcyan;
+  position: absolute;
+  bottom: 0;
+  font-size: min(2vw,16px);
+}
+.languagecplusplus
+{
+  float: left;
+  color: pink;
+  position: absolute;
+  bottom: 0;
+  font-size: min(2vw,16px);
+}
+
 
 .projectCard:hover {
   box-shadow: 8px 16px rgba(0, 0, 0, 0.5);
