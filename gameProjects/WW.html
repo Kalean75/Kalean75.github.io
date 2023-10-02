@@ -3,16 +3,16 @@
 
 <head>
 	<title>
-		Released Games
+		Prototype games
 	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link type="text/css" rel="stylesheet" href="../css/style.css">
-	<link type="text/css" rel="stylesheet" href="../css/projstyle.css">
+	<link type="text/css" rel="stylesheet" href="../css/gameProjStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -24,15 +24,13 @@
 		<nav class="navbar navbar-default navbar-fixed-top navbar-fade">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"
-						aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
-							alt=""></a>
+					  </button>
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src = "../img/lettuce.jpg"  alt = ""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-center">
@@ -44,9 +42,8 @@
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to all projects</a></li>
-								<li><a href="./SandF.html">Shapes and Friends</a></li>
-								<li><a href="./WW.html">Whisker Witchery</a></li>
+								<li><a href="https://kalean75.github.io/projects">Back to All Projects</a></li>
+								<li><a href="https://kalean75.itch.io/shapes-and-friends">Riff</a></li>
 							</ul>
 						</li>
 						<li><a href="https://kalean75.github.io/resume"><span
@@ -69,15 +66,13 @@
 		<div class="container-fluid text-center">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#myNavbar2" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar2" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
-							alt=""></a>
+					  </button>
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src = "../img/lettuce.jpg"  alt = ""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar2">
 					<ul class="nav navbar-nav navbar-center">
@@ -89,12 +84,12 @@
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to all projects</a></li>
-								<li><a href="./SandF.html">Shapes and Friends</a></li>
-								<li><a href="./WW.html">Whisker Witchery</a></li>
+								<li><a href="https://kalean75.github.io/projects">Back to All Projects</a></li>
+								<li><a href=#>Riff</a></li>
 							</ul>
 						</li>
-						<li><a href="./resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="https://kalean75.github.io/resume"><span
+									class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -110,35 +105,49 @@
 				</div>
 			</nav>
 			<div class="row">
-				<div class="header">
+				<div class="header" id="header">
 					<h1>Released Games</h1>
-					<p></p>
 				</div>
-				<div class="content">
-					<div class="col-sm-6 projectCard">
-						<h1>Shapes and Friends</h1>
-						<a href="./SandF.html">
-							<img class="img-responsive" src="../img/Projects/SandF.png" alt="">
-						</a>
-						<p>A shape going through life</p>
-					</div>
-					<div class="col-sm-6 projectCard">
-						<h1>Whisker Witcher</h1>
-						<a href="./WW.html">
-							<img class="img-responsive" src="../img/Projects/WW.png" alt="">
-						</a>
-						<p>A cursed witch must restore her form!</p>
+				<div class="content" id="content">
+					<div id="released" class="col-sm-6">
+						<div id="WhisWitch">
+							<h2 style="color:white;"> Whisker Witchery</h2>
+							<p><i>A simple 3D platformer about a witch who was turned into a rat by her rival.</i></p>
+							<p>Whisker Witchery is a third-person stealth puzzle platformer, in which the player
+								controls
+								a once-human apprentice who was transfigured into a rat by your rival! After being
+								cursed by
+								your rival,
+								you must navigate their witch cottage all while avoiding detection by the magic
+								creatures
+								within.
+								Use your environment and potions along the way to retrieve the magical ingredients to
+								brew a
+								potion
+								turning yourself human once more!</p>
+							<p><b>Roles: Engineer</b></p>
+							<iframe src="https://store.steampowered.com/widget/2376280/" frameborder="0" width="50%"
+								height="190"></iframe>
+							<iframe frameborder="0" src="https://itch.io/embed/1829241" width="50%">
+								<a href="https://dymander.itch.io/whisker-witchery">
+									Whisker Witchery [Alpha 8.2] by Dymander,
+									TheUltimateSir, Raydowbee, Devin, SLCdiaoren, Anthony Palerino, Elena Southworth,
+									Cameron
+									Cary,RisingDawn, Abeee, DailyDan, Morgan_Hanephin, GoatPants
+								</a>
+							</iframe>
+						</div>
 					</div>
 				</div>
-				<p>See source code and ALL my projects on <a href="https://github.com/Kalean75">github!</a></p>
 			</div>
-			<footer class="text-center">
-				<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-					<span class="glyphicon glyphicon-chevron-up"></span>
-				</a>
-				<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
-			</footer>
 		</div>
+		<footer class="text-center">
+			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
+</footer>
+	</div>
 </body>
 
 </html>

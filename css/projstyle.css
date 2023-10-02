@@ -1,5 +1,5 @@
 .projectCard {
-  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   cursor: pointer;
   margin: 10px;
@@ -19,12 +19,11 @@
 }
 
 .projectCard:hover {
-  box-shadow: 8px 16px black;
-  cursor: pointer;
+  box-shadow: 8px 16px rgba(0, 0, 0, 0.5);
+  cursor: pointer;  
 }
 .projectCard:hover .description {
   visibility: visible;
-  opacity: 0.5;
 }
 .projectCard h1 
 {
