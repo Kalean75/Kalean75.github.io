@@ -18,6 +18,19 @@
   object-fit: cover;
   width: 100%;
 }
+.projectCard:hover {
+  box-shadow: 8px 16px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.projectCard:hover .description {
+  visibility: visible;
+}
+.projectCard h1 
+{
+  color: grey;
+  font-size: min(3vw,32px);
+}
 .projectCard p
 {
   /*float: right;*/
@@ -82,20 +95,6 @@
   position: absolute;
   bottom: 0;
   font-size: min(2vw,16px);
-}
-
-
-.projectCard:hover {
-  box-shadow: 8px 16px rgba(0, 0, 0, 0.5);
-  cursor: pointer;  
-}
-.projectCard:hover .description {
-  visibility: visible;
-}
-.projectCard h1 
-{
-  color: grey;
-  font-size: min(3vw,32px);
 }
 
 .description {

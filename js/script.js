@@ -88,3 +88,87 @@ function changePhoto() {
     });
   })
 }(jQuery));
+
+/**document.addEventListener("DOMContentLoaded", function () 
+{
+  // Initialize Tooltip
+  var tooltips = document.querySelectorAll('[data-toggle="tooltip"]');
+  tooltips.forEach(function (tooltip) {
+    new bootstrap.Tooltip(tooltip);
+  });
+
+  // Hide navbar
+  var navbar = document.querySelector(".navbar-fade");
+  if (navbar) 
+  {
+    navbar.style.display = "none";
+  }
+
+  // Handle header click
+  var headers = document.querySelectorAll(".header");
+  headers.forEach(function (header) 
+  {
+    header.addEventListener("click", function () {
+      var graphics = header.nextElementSibling;
+      var graphics2 = graphics.nextElementSibling;
+
+      // Toggle slide
+      toggleSlide(graphics);
+      toggleSlide(graphics2);
+    });
+  });
+
+  function toggleSlide(element) {
+    if (window.getComputedStyle(element).display === "none") 
+    {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+
+  // Fade in navbar on scroll
+  var navbarFade = document.querySelector('.navbar-fade');
+  if (navbarFade) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 90) {
+        navbarFade.style.display = "block";
+      } else {
+        navbarFade.style.display = "none";
+      }
+    });
+  }
+
+  // Smooth scrolling for navbar and footer links
+  var navbarLinks = document.querySelectorAll(".navbar a");
+  var footerLink = document.querySelector("footer a[href='#myPage']");
+
+  function scrollToElement(element) {
+    var targetId = element.getAttribute("href").substring(1);
+    var targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      document.querySelector(".navbar-fade").style.display = "none";
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+      });
+    }
+  }
+
+  if (navbarLinks) {
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        scrollToElement(link);
+      });
+    });
+  }
+
+  if (footerLink) {
+    footerLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      scrollToElement(footerLink);
+    });
+  }
+});**/
+
