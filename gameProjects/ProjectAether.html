@@ -3,16 +3,16 @@
 
 <head>
 	<title>
-		Game Jam Projects
+		Game Projects/Prototypes
 	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link type="text/css" rel="stylesheet" href="../css/style.css">
-	<link type="text/css" rel="stylesheet" href="../css/projstyle.css">
+	<link type="text/css" rel="stylesheet" href="../css/gameProjStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -24,15 +24,13 @@
 		<nav class="navbar navbar-default navbar-fixed-top navbar-fade">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"
-						aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
-							alt=""></a>
+					  </button>
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src = "../img/lettuce.jpg"  alt = ""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-center">
@@ -44,8 +42,8 @@
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to all projects</a></li>
-								<li><a href="ProjectAether.html">Project Aether</a></li>
+								<li><a href="https://kalean75.github.io/projects">Back to All Projects</a></li>
+								<li><a href="https://kalean75.itch.io/shapes-and-friends">Riff</a></li>
 							</ul>
 						</li>
 						<li><a href="https://kalean75.github.io/resume"><span
@@ -68,15 +66,13 @@
 		<div class="container-fluid text-center">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#myNavbar2" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar2" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
-							alt=""></a>
+					  </button>
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src = "/img/lettuce.jpg"  alt = ""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar2">
 					<ul class="nav navbar-nav navbar-center">
@@ -88,11 +84,12 @@
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to all projects</a></li>
-								<li><a href="ProjectAether.html">Project Aether</a></li>
+								<li><a href="https://kalean75.github.io/projects">Back to All Projects</a></li>
+								<li><a href=#>Aether</a></li>
 							</ul>
 						</li>
-						<li><a href="./resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="https://kalean75.github.io/resume"><span
+									class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -108,28 +105,33 @@
 				</div>
 			</nav>
 			<div class="row">
-				<div class="header">
+				<div class="header" id="header">
 					<h1>Game Jams</h1>
-					<p></p>
 				</div>
-				<div class="content">
-					<div class="col-sm-12 projectCard">
-						<h1>Project Aether</h1>
-						<a href="./ProjectAether.html">
-							<img class="img-responsive" src="../img/Aether.png" alt="">
-						</a>
-						<p>Play as a black hole and gobble space debris!</p>
+				<div class="content" id="content">
+					<div id="jams" class="col-sm-12">
+						<div id="Aether">
+							<h3 style="color:white;">Project Aether</h3>
+							<p><i>This game is from a 48 hr game jam in August 2023</i></p>
+							<p>Play as a black hole, eating other space debris to grow larger!</p>
+							<p></p>
+							<p><b>Roles: Engineer, Designer, Producer</b></p>
+							<iframe width="50%" height="auto" frameborder="0" src="https://itch.io/embed/2214758"><a
+									href="https://kalean75.itch.io/aether">Aether by Devin, NeverKnowz
+								</a>
+							</iframe>
+						</div>
 					</div>
 				</div>
-				<p>See source code and ALL my projects on <a href="https://github.com/Kalean75">github!</a></p>
 			</div>
-			<footer class="text-center">
-				<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-					<span class="glyphicon glyphicon-chevron-up"></span>
-				</a>
-				<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
-			</footer>
 		</div>
+		<footer class="text-center">
+			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
+</footer>
+	</div>
 </body>
 
 </html>
