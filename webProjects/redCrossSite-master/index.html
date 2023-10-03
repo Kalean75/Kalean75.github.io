@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <title>Red Cross Info</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row" id="pictures">
+
+      <img src="./images/installation.jpeg" width="33.3%">
+
+      <img src="./images/Workers.JPG" width="33.3%">
+
+      <img src="./images/installinfSmokeAlarm.JPG" width="33.3%">
+
+    </div>
+
+
+    <!-- logo -->
+    <div class="row p-4" id="logo">
+      <div class="col-md-12 text-center">
+        <img src="./images/redcross-logo.png">
+      </div>
+    </div>
+
+
+    <!-- Message -->
+    <div class="row p-4" id="message">
+      <div class="col-md-12 text-center">
+        <h4 id="RedCrossBlack">COVID-19 UPDATE: You can request a smoke alarm installation, however, we are temporarily
+          suspending the scheduling of appointments until public health conditions improve.</h4>
+      </div>
+    </div>
+
+
+    <!-- about -->
+    <div class="row shadow-lg" id="textInfo">
+      <div class="col-md-12 p-4">
+        <p>Home fires claim seven lives every day but having working smoke alarms can cut the risk of death by half. The
+          American Red Cross aims reduce home fire deaths and injuries in the United States by 25 percent over five
+          years
+          through the Home Fire Campaign.</p>
+        <p>At no cost we will install up to three FREE smoke alarms per home, and share valuable, lifesaving safety
+          information. Please fill out the form below to schedule your FREE installation.</p>
+        <p>***This form can accept requests from the following states and counties: UT, NV, Uinta County WY, Lincoln
+          County WY, Mohave County AZ.***</p>
+        <p id="RedCrossBlack"><b>To learn more about the Home Fire Campaign, please visit: <a
+              href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/fire/prevent-home-fire.html"
+              target="_blank">redcross.org/homefires</a></b></p>
+      </div>
+    </div>
+
+
+    <!-- form -->
+    <div class="row p-4 shadow-lg" id="formInput">
+      <div class="col-md-12">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputFirstName" required>First Name</label>
+              <input type="FirstName" class="form-control" id="inputFirstName" required>
+              <div class="invalid-feedback">
+                Please enter Name
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputLastName">Last Name</label>
+              <input type="LastName" class="form-control" id="inputLastName" required>
+              <div class="invalid-feedback">
+                Please enter Last Name
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputphoneNumber">Phone Number</label>
+              <input type="phoneNumber" class="form-control" id="inputphoneNumber" required>
+              <div class="invalid-feedback">
+                Please enter Phone number
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input type="Email" class="form-control" id="inputEmail" required>
+              <div class="invalid-feedback">
+                Please enter Email
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter Address
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" required>
+              <div class="invalid-feedback">
+                Please enter City
+              </div>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control" required>
+                <option>Nevada</option>
+                <option>Utah</option>
+              </select>
+              <div class="invalid-feedback">
+                Please Select State
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" required>
+              <div class="invalid-feedback">
+                Please enter City
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    <div class="row p-4 shadow-lg" id="HFCImpacts">
+      <div class="col-md-12 text-center">
+        <img src="./images/HFC Impacts to date.png" width="100%">
+      </div>
+    </div>
+
+
+    <div class="row px-4 pt-4" id="HowToGetInvolved">
+      <div class="col-md-12 text-center">
+        <h1 id="RedCrossBlack"><b>How You Can Get Involved</b></h1>
+        <h3 id="RedCrossGrey">Join us for a rewarding day at a Sound the Alarm event near you and invite others to
+          sponsor your commitment to help save lives.</h3>
+      </div>
+    </div>
+
+    <div class="row p-5" id="HowToGetInvolved">
+      <div class="col-md-4 text-center">
+        <img src="./images/Volunteer2.png" alt="Volunteer" width="50%">
+        <h3 id="RedCrossBlack"><b>Volunteer</b></h3>
+        <p>Volunteer to install smoke alarms in your community.</p>
+        <a href="https://www.redcross.org/volunteer/become-a-volunteer.html" target="_blank"><button type="button"
+            class="btn" id="HTGIbuttons"><b>FIND AN EVENT</b></button></a>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="./images/Fundraise2.png" alt="Fundraise picture" width="50%">
+        <h3 id="RedCrossBlack"><b>Fundraise</b></h3>
+        <p>Fundraise on Facebook to help <i>Sound the Alarm.</i></p>
+        <a href="https://www.redcross.org/donations/ways-to-donate/fundraising-ideas-and-requests.html"
+          target="_blank"><button type="button" class="btn" id="HTGIbuttons"><b>START A FUNDRAISER</b></button></a>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="./images/Donate2.png" alt="Donate" width="50%">
+        <h3 id="RedCrossBlack"><b>Donate</b></h3>
+        <p>Donate to support home fire relief and help save lives.</p>
+        <a href="https://www.redcross.org/donate/donation.html/" target="_blank"><button type="button" class="btn"
+            id="HTGIbuttons"><b>DONATE NOW</b></button></a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+/* CSS Document */
+/* Main Layout */
+* 
+{
+    margin:0; padding: 0;
+
+}
+
+body
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+    font-family: 'Eraser';
+}
+
+footer
+{
+    font-family: Times, "Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", "serif";
+}
+
+h1
+{
+	font-size: 5em;
+}
+
+h2
+{
+	font-size: 3em;
+}
+
+h3
+{
+    font-size: 2em;
+    margin: 50px 0px 0px;
+    text-align: center;
+}
+
+div.og-container
+{
+	width: 500px;
+	height: auto;
+	margin: 10px auto 20px;
+	padding: 0px 15px;
+	border-radius: 6px;
+	border: 3px solid #CE0003;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: white;
+}
+
+p.main
+{
+    padding: 10px;
+    color: white;
+}
+
+a.link
+{
+    color: lightskyblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.link:hover
+{
+    color: royalblue;
+}
+
+h4.link
+{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h4.link a
+{
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+h4.link a:hover
+{
+    color: royalblue;
+}
+
+div.main-container, h1, h2
+{
+	text-align: center;
+	color: white;
+}
+
+div
+{
+	box-sizing: border-box;
+	color: white;
+}
+
+.column
+{
+    width: 33.33%;
+    float: left;
+}
+
+div.content-container:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row div
+{
+	width: 150px;
+	height: 150px;
+	border: 3px solid white;
+	display: inline-block;
+	margin: 0px -3px -2px;
+	font-size: 100px;
+	padding-top: 13px;
+    cursor: default;
+}
+
+.row
+{
+	text-align: center;
+}
+
+#row-1 div
+{
+	margin-top: 50px;
+	border-top: none;
+}
+
+#row-3 div
+{
+	border-bottom: none;
+}
+
+.row div:first-child {border-left: none;}
+
+.row div:last-child {border-right: none;}
+
+.scoreTable
+{
+    padding-top: 55px;
+}
+
+.scoreRow
+{
+    padding: 58px 0px;
+}
+
+.name, .score
+{
+    width: 50%;
+    float: left;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.name
+{
+    padding-left: 50px;
+}
+
+.score
+{
+    padding-right: 50px;
+}
+
+/* Button Stuff */
+button
+{
+    display: none;
+    margin: 25px auto 0px;
+    border: 1px solid #5cb85c;
+    border-radius: 6px;
+    background-color: #5cb85c;
+    padding: 9px 16px;
+    line-height: 1.3333333;
+    color: #fff;
+	cursor: pointer;
+    font-size: 30px;
+    font-family: 'Eraser';
+}
+
+button:hover
+{
+    background-color: #449D44;
+    border-color: #449D44;
+}
+
+/* Responsive Stuff */
+@media screen and (max-width:1350px)
+{
+    .column
+    {
+        width: 100%;
+        float: none;
+    }
+    
+    #column-1
+    {
+        display: none;
+    }
+    
+    .scoreTable
+    {
+        width: 50%;
+        margin: 0px auto;
+        padding-top: 0px;
+    }
+}
