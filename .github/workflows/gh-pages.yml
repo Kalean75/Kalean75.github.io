@@ -6,10 +6,10 @@ name: Devin White
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -17,6 +17,8 @@ jobs:
     steps:
       # Checkout the code
       - uses: actions/checkout@v3
+        with:
+          node-version: 16
 
       # Install .NET Core SDK
       - name: Setup .NET Core
