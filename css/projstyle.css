@@ -64,6 +64,18 @@
 
 }
 
+.javascript
+{
+  border-style: solid;
+  border-color: yellow;
+}
+
+.php
+{
+  border-style: solid;
+  border-color: purple;
+}
+
 .languagecsharp
 {
   float: left;
@@ -92,6 +104,22 @@
 {
   float: left;
   color: pink;
+  position: absolute;
+  bottom: 0;
+  font-size: min(2vw,16px);
+}
+.languagejavascript
+{
+  float: left;
+  color: yellow;
+  position: absolute;
+  bottom: 0;
+  font-size: min(2vw,16px);
+}
+.languagephp
+{
+  float: left;
+  color: purple;
   position: absolute;
   bottom: 0;
   font-size: min(2vw,16px);
