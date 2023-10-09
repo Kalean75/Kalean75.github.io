@@ -67,7 +67,7 @@
 .javascript
 {
   border-style: solid;
-  border-color: yellow;
+  border-color: gold;
 }
 
 .php
@@ -111,7 +111,7 @@
 .languagejavascript
 {
   float: left;
-  color: yellow;
+  color: gold;
   position: absolute;
   bottom: 0;
   font-size: min(2vw,16px);
