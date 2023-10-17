@@ -3,7 +3,7 @@
 
 <head>
 	<title>
-		Shapes and Friends
+		Water Shader
 	</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link type="text/css" rel="stylesheet" href="../css/style.css">
-	<link type="text/css" rel="stylesheet" href="../css/gameProjStyle.css">
+	<link type="text/css" rel="stylesheet" href="../css/GraphicsStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -43,7 +43,9 @@
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="../projects.html">Back to All Projects</a></li>
-								<li><a href="https://kalean75.itch.io/shapes-and-friends">Shapes and Friends</a></li>
+								<li><a href="">Water-Rendering</a></li>
+								<li><a href=""></a></li>
+								<li><a href=""></a></li>
 							</ul>
 						</li>
 						<li><a href="../resume.html"><span
@@ -85,7 +87,9 @@
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="../projects.html">Back to All Projects</a></li>
-								<li><a href="https://kalean75.itch.io/shapes-and-friends">Shapes and Friends</a></li>
+								<li><a href=#>Water-Rendering</a></li>
+								<li><a href=#></a></li>
+								<li><a href=#></a></li>
 							</ul>
 						</li>
 						<li><a href="../resume.html"><span
@@ -104,31 +108,58 @@
 					</ul>
 				</div>
 			</nav>
+			<div id = "background">
+				<h1>Background</h1>
+				<p> This page is a work in progress. More to come!</p>
+				<p> The goal was to try to create a shader that properly simulated water, including reflection, tessellation, etc.</p>
+			</div>
 			<div class="row">
 				<div class="header" id="header">
-					<h1>Released Games</h1>
+					<h1>Water-Rendering</h1>
 				</div>
 				<div class="content" id="content">
-					<div id="released" class="col-sm-6">
-						<div id="sandf">
-							<h2> Shapes and Friends</h2>
-							<p><i>A short(~5 minute) and simple auto-sidescroller about life friends made along the
-									way</i></p>
-							<p>Play as a randomly generated shape with random colors and fun accessories!
-								Players can move up, down, left, and right. As they travel through the scrolling scenery
-								representing different stages of life,
-								they also encounter other accessorized shapes drifting by but their colors are hidden!!
-								Players must approach them to reveal their true colors,
-								causing them to either run away or befriend players during part of their journey
-								through life.</p>
-							<p><b>Roles: Engineer, Producer, Designer</b></p>
-							<iframe frameborder="0" src="https://itch.io/embed/1661242" width="50%" height="auto">
-								<a href="https://kalean75.itch.io/shapes-and-friends">
-									Shapes And Friends by Devin, AOEE,
-									pandangi,
-									Amanda Duong
-								</a>
-							</iframe>
+					<div id="graphics" class="graphics col-sm-12">
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+								<li data-target="#carousel" data-slide-to="3"></li>
+								<li data-target="#carousel" data-slide-to="4"></li>
+								<li data-target="#carousel" data-slide-to="5"></li>
+							</ol>
+
+							<div class="carousel-inner">
+								<div class="item active">
+									<h3>Texture</h3>
+									<img src="../img/graphics/Texture.png" class="img-responsive format-img" alt="Image">
+								</div>
+								<div class="item">
+									<h3>displacement</h3>
+									<img src="../img/graphics/displacement.png" class="img-responsive format-img" alt="Image">
+								</div>
+
+								<div class="item">
+									<h3>Transparency</h3>
+									<img src="../img/graphics/Transparency.png" class="img-responsive format-img" alt="Image">
+								</div>
+								<div class="item">
+									<h3>Reflection</h3>
+									<img src="../img/graphics/Reflection.png" class="img-responsive format-img" alt="Image">
+								</div>
+								<div class="item">
+									<h3>overall</h3>
+									<img src="../img/graphics/overall.png" class="img-responsive format-img" alt="Image">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#carousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
 					</div>
 				</div>
