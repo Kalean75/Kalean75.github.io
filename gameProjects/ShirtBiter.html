@@ -3,7 +3,7 @@
 
 <head>
 	<title>
-		Resume
+		ShirtBiter
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -11,11 +11,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="../css/style.css">
+	<link type="text/css" rel="stylesheet" href="../css/gameProjStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="../js/script.js"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -30,16 +31,22 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="../img/lettuce.jpg"
 							alt=""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-center">
-						<li><a href="index.html"><span class="glyphicon glyphicon-user">About</span></a>
+						<li><a href="../index.html"><span class="glyphicon glyphicon-user">About</span></a>
 						</li>
-						<li><a href="projects.html"><span class="	glyphicon glyphicon-blackboard">Projects</span></a>
+						<li class="active dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown"><span
+									class="glyphicon glyphicon-blackboard">Projects</span>
+								<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../projects.html">Back to All Projects</a></li>
+							</ul>
 						</li>
-						<li class="active"><a href=#><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="../resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -55,7 +62,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container-fluid bg-2 text-center">
+		<div class="container-fluid text-center">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -70,11 +77,17 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar2">
 					<ul class="nav navbar-nav navbar-center">
-						<li><a href="index.html"><span class="glyphicon glyphicon-user">About</span></a>
+						<li><a href="../index.html"><span class="glyphicon glyphicon-user">About</span></a>
 						</li>
-						<li><a href="projects.html"><span class="	glyphicon glyphicon-blackboard">Projects</span></a>
+						<li class="active dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown"><span
+									class="glyphicon glyphicon-blackboard">Projects</span>
+								<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../projects.html">Back to All Projects</a></li>
+							</ul>
 						</li>
-						<li class="active"><a href=#><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="../resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -89,16 +102,34 @@
 					</ul>
 				</div>
 			</nav>
-			<iframe src="./pdfs/DWRes.pdf" style="width: 100%;" height="1200px">
-			</iframe>
+			<div class="row">
+				<div class="header" id="header">
+					<h1>Game Jams</h1>
+				</div>
+				<div class="content" id="content">
+					<div id="jams" class="col-sm-12">
+						<div id="ShirtBiter">
+							<h2 style="color:white;">ShirtBiter</h2>
+							<p><i>This game is from a 48 hr game jam in January 2024!</i></p>
+							<p>Fight off wave sof enemies and survive!</p>
+							<p></p>
+							<p><b>Roles: Engineer, Designer, Producer</b></p>
+							<iframe width="50%" height="auto" frameborder="0" src="https://itch.io/embed/2214758"><a
+									href="">ShirtBiter by Devin, NeverKnowz
+								</a>
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer class="text-center">
-			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-				<span class="glyphicon glyphicon-chevron-up"></span>
-			</a>
-			<p>See source code and ALL my projects on <a href="https://github.com/Kalean75">github!</a></p>
-			<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
-		</footer>
+			<footer class="text-center">
+				<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+					<span class="glyphicon glyphicon-chevron-up"></span>
+				</a>
+				<p>See source code and ALL my projects on <a href="https://github.com/Kalean75">github!</a></p>
+				<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
+			</footer>
 	</div>
 </body>
 
