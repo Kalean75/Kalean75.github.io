@@ -3,7 +3,7 @@
 
 <head>
 	<title>
-		Project Aether
+		Art
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link type="text/css" rel="stylesheet" href="../css/style.css">
-	<link type="text/css" rel="stylesheet" href="../css/gameProjStyle.css">
+	<link type="text/css" rel="stylesheet" href="../css/projstyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -31,23 +31,24 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="../img/lettuce.jpg"
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
 							alt=""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-center">
-						<li><a href="../index.html"><span class="glyphicon glyphicon-user">About</span></a>
+						<li><a href="index.html"><span class="glyphicon glyphicon-user">About</span></a>
 						</li>
 						<li class="active dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown"><span
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to All Projects</a></li>
-								<li><a href="./ProjectAether.html">Project Aether</a></li>
+								<li><a href="projects.html">Back to all projects</a></li>
+								<li><a href=#>Machinima</a></li>
+								<li><a href=#>Modeling</a></li>
 							</ul>
 						</li>
-						<li><a href="../resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -78,18 +79,19 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar2">
 					<ul class="nav navbar-nav navbar-center">
-						<li><a href="../index.html"><span class="glyphicon glyphicon-user">About</span></a>
+						<li><a href="index.html"><span class="glyphicon glyphicon-user">About</span></a>
 						</li>
 						<li class="active dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown"><span
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to All Projects</a></li>
-								<li><a href="./ProjectAether.html">Project Aether</a></li>
+								<li><a href="projects.html">Back to all projects</a></li>
+								<li><a href=#>Machinima</a></li>
+								<li><a href=#>Modeling</a></li>
 							</ul>
 						</li>
-						<li><a href="../resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -105,26 +107,35 @@
 				</div>
 			</nav>
 			<div class="row">
-				<div class="header" id="header">
-					<h1>Game Jams</h1>
+				<div class="header">
+					<h1>Machinima Projects</h1>
+					<p>Machinima!</p>
 				</div>
-				<div class="content" id="content">
-					<div id="jams" class="col-sm-12">
-						<div id="Aether">
-							<h2 style="color:white;">Project Aether</h2>
-							<p><i>This game is from a 48 hr game jam in August 2023</i></p>
-							<p>Play as a black hole, eating other space debris to grow larger!</p>
-							<p></p>
-							<p><b>Roles: Engineer, Designer, Producer</b></p>
-							<iframe width="50%" height="auto" frameborder="0" src="https://itch.io/embed/2214758"><a
-									href="https://kalean75.itch.io/aether">Aether by Devin, NeverKnowz
-								</a>
-							</iframe>
-						</div>
+				<div class="content">
+					<div class="col-sm-4 projectCard inactive">
+						<h1>T-Day</h1>
+						<a href="">
+							<img src="./img/Art/AssetPipelineFinal/FinalScreenshot1.png" alt="">
+						</a>
+						<p>War is hell.</p>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="header">
+					<h1>Modeling Projects</h1>
+					<p>3D Models</p>
+				</div>
+				<div class="content">
+					<div class="col-sm-4 projectCard inactive">
+						<h1>Unreal Scene</h1>
+						<a href="">
+							<img src="./img/Art/AssetPipelineFinal/FinalScreenshot1.png" alt="">
+						</a>
+						<p>Scene of a city</p>
+					</div>
+				</div>
+			</div>
 			<footer class="text-center">
 				<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
 					<span class="glyphicon glyphicon-chevron-up"></span>
@@ -132,7 +143,7 @@
 				<p>See source code and ALL my projects on <a href="https://github.com/Kalean75">github!</a></p>
 				<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
 			</footer>
-	</div>
+		</div>
 </body>
 
 </html>
