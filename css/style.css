@@ -138,14 +138,22 @@ h4 {
 }
 
 .navbar li a,
-.navbar .navbar-brand {
+.navbar  {
   color: #d5d5d5 !important;
   font-style: italic;
 }
+.navbar-brand {
+  width: 50px;
+  float: right;
+  height: 60px;
+  line-height: 20px;
+  align-content: center;
+  padding: 0px;
+}
+
 .navbar-brand>img {
   height: 100%;
-  padding: 15px;
-  width: auto;
+  width: 100%;
 }
 
 .navbar-nav li a:hover {
