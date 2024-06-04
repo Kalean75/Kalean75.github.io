@@ -3,7 +3,7 @@
 
 <head>
 	<title>
-		Art
+		T-Day
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link type="text/css" rel="stylesheet" href="../css/style.css">
-	<link type="text/css" rel="stylesheet" href="../css/projstyle.css">
+	<link type="text/css" rel="stylesheet" href="../css/gameProjStyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="/img/lettuce.jpg"
+					<a class="navbar-brand" href="#myPage" onclick="changePhoto()"> <img src="../img/lettuce.jpg"
 							alt=""></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
@@ -43,12 +43,10 @@
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to all projects</a></li>
-								<li><a href=#>Machinima</a></li>
-								<li><a href=#>Modeling</a></li>
+								<li><a href="../projects.html">Back to All Projects</a></li>
 							</ul>
 						</li>
-						<li><a href="resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="../resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -86,12 +84,10 @@
 									class="glyphicon glyphicon-blackboard">Projects</span>
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../projects.html">Back to all projects</a></li>
-								<li><a href=#>Machinima</a></li>
-								<li><a href=#>Modeling</a></li>
+								<li><a href="../projects.html">Back to All Projects</a></li>
 							</ul>
 						</li>
-						<li><a href="resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
+						<li><a href="../resume.html"><span class="glyphicon glyphicon-list-alt">Resume</span></a></li>
 						<li><a href="https://github.com/Kalean75"><svg xmlns="http://www.w3.org/2000/svg" width="20"
 									height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 									<path
@@ -107,35 +103,25 @@
 				</div>
 			</nav>
 			<div class="row">
-				<div class="header">
-					<h1>Machinima Projects</h1>
-					<p>Machinima!</p>
+				<div class="header" id="header">
+					<h1>T-Day</h1>
 				</div>
-				<div class="content">
-					<div class="col-sm-4 projectCard">
-						<h1>T-Day</h1>
-						<a href="TDay.html">
-							<img src="../img/Art/T-Day/T-Day.png" alt="">
-						</a>
-						<p>War is hell.</p>
+				<div class="content" id="content">
+					<div id="Machinima" class="col-sm-12">
+						<div id="T-Day">
+							<h2 style="color:white;">T-Day</h2>
+							<p><i>Made as a final project in machinima class</i></p>
+							<p>A 100% absolutely true story about hatching turtles</p>
+							<p></p>
+							<p><b>Roles: Editing, Shot Taking, Production, Writing</b></p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/uGNTjFFQe0Q?si=JQG0uwigvW-fKn0m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</a>
+							</iframe>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="header">
-					<h1>Modeling Projects</h1>
-					<p>3D Models</p>
-				</div>
-				<div class="content">
-					<div class="col-sm-4 projectCard">
-						<h1>Unreal Scene</h1>
-						<a href="">
-							<img src="../img/Art/AssetPipelineFinal/FinalScreenshot5.png" alt="">
-						</a>
-						<p>Scene of a city</p>
-					</div>
-				</div>
-			</div>
+		</div>
 			<footer class="text-center">
 				<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
 					<span class="glyphicon glyphicon-chevron-up"></span>
@@ -143,7 +129,7 @@
 				<p>See source code and ALL my projects on <a href="https://github.com/Kalean75">github!</a></p>
 				<p>© 2023. DW-Portfolio. Designed and Developed by Devin White</p>
 			</footer>
-		</div>
+	</div>
 </body>
 
 </html>
