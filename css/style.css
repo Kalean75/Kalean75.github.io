@@ -156,11 +156,12 @@ h4 {
   height: 50%;
   width: 50%;
   float: right;
-}
+  display: none;
+} 
 
 .navbar-header {
-  width: 5%;
-  float: left;
+  width: auto;
+  float: right;
 }
 
 .navbar-nav li a:hover {
@@ -175,7 +176,7 @@ h4 {
 
 .navbar-nav
 {
-  float: right;
+  float: left;
   width: 95%;
 }
 .navbar-default .navbar-toggle {
