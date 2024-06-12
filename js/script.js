@@ -1,5 +1,57 @@
 
-function generateQuote() {
+$(function() {
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Hide navbar
+  $(".navbar-fade").hide();
+
+  $('.header').click(function() {
+    // Getting the next elements
+    var $graphics = $(this).next();
+    var $graphics2 = $graphics.next();
+
+    // Open up the content needed - toggle the slide
+    $graphics.slideToggle(500);
+    $graphics2.slideToggle(500);
+  });
+
+  // Fade in .navbar
+  $(window).scroll(function() {
+    // Set distance user needs to scroll before fadeIn
+    if ($(this).scrollTop() > 90) {
+      $('.navbar-fade').fadeIn("fast");
+    } else {
+      $('.navbar-fade').fadeOut();
+    }
+  });
+
+  // Add smooth scrolling to navbar + footer
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure hash has value
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Hide navbar
+      $(".navbar-fade").hide();
+
+      // Using jQuery's animate() method to add smooth page scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function() {
+        // Add hash (#) to URL when done scrolling
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+
+const generateQuote = () => {
   var quote = ["\"Look to those who walked before to lead those who walk after\"",
     "\"A journey of a thousand miles begins with a single step\"", "\"Wherever you go, go with all your heart.\"", "\"Fortune favors the bold!\""];
   var min = 0;
@@ -9,7 +61,7 @@ function generateQuote() {
   document.getElementById("quote").style.fontStyle = "italic";
 }
 
-function changePhoto() {
+const changePhoto = () => {
   var elements = document.getElementsByClassName("Icon");
   for (i = 0; i < elements; i++) {
     elements[i].value = "./img/lettuce.jpg"
@@ -17,158 +69,76 @@ function changePhoto() {
 
 }
 
-//Jquery
-(function ($) {
+const body = document.body
+const btnTheme = document.querySelectorAll('.fa-moon')[0];
+const btnTheme2 = document.querySelectorAll('.fa-moon')[1];
+const btnHamburger = document.querySelector('.fa-bars')
 
-  //fade in navbar
-  $(document).ready(function () {
-    // Initialize Tooltip
-    $('[data-toggle="tooltip"]').tooltip();
+const addThemeClass = (bodyClass, btnClass) => {
+    body.classList.add(bodyClass)
+    btnTheme.classList.add(btnClass)
+    btnTheme2.classList.add(btnClass)
+}
 
-    // hide navbar
-    $(".navbar-fade").hide();
+const getBodyTheme = localStorage.getItem('portfolio-theme')
+const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
+const getBtnTheme2 = localStorage.getItem('portfolio-btn-theme2')
 
-    $('.header').click(function () {
+addThemeClass(getBodyTheme, getBtnTheme)
+addThemeClass(getBodyTheme, getBtnTheme2)
 
-      $header = $(this);
-      //getting the next element
-      $graphics = $header.next();
-      $graphics2 = $graphics.next();
-      //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-      $graphics.slideToggle(500, function () {
-        //execute this after slideToggle is done
-        return $graphics.is(":visible");
-      });
 
-      $graphics2.slideToggle(500, function () {
-        //execute this after slideToggle is done
-        return $graphics2.is(":visible");
-      });
-    });
-    //change icon on collapse/expand
-    //$('.glyphicon').click(function () {
-    //$(this).toggleClass("glyphicon-plus-sign").toggleClass("glyphicon-minus-sign");
-    //});
-    // fade in .navbar
-    $(function () {
-      $(window).scroll(function () {
+const isDark = () => body.classList.contains('dark')
 
-        // set distance user needs to scroll before fadeIn
-        if ($(this).scrollTop() > 90) {
-          $('.navbar-fade').fadeIn("fast");
-        } else {
-          $('.navbar-fade').fadeOut();
-        }
-      });
-    });
+const setTheme = (bodyClass, btnClass) => {
 
-    // Add smooth scrolling to navbar + footer
-    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+    body.classList.remove(localStorage.getItem('portfolio-theme'))
+    btnTheme.classList.remove(localStorage.getItem('portfolio-btn-theme'))
+    btnTheme2.classList.remove(localStorage.getItem('portfolio-btn-theme2'))
 
-      //make sure hash has value
-      if (this.hash !== "") {
+    addThemeClass(bodyClass, btnClass)
 
-        // Prevent default anchor click behavior
-        event.preventDefault();
+    localStorage.setItem('portfolio-theme', bodyClass)
+    localStorage.setItem('portfolio-btn-theme', btnClass)
+    localStorage.setItem('portfolio-btn-theme2', btnClass)
+}
 
-        // Store hash
-        var hash = this.hash;
+const toggleTheme = () =>
+    isDark() ? setTheme('light', 'fa-moon') : setTheme('dark', 'fa-sun')
 
-        $(".navbar-fade").hide();
+btnTheme.addEventListener('click', toggleTheme)
+btnTheme2.addEventListener('click', toggleTheme)
 
-        // Using jQuery's animate() method to add smooth page
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 1000, function () {
+// const displayList = () => {
+//     const navUl = document.querySelector('.nav__list')
 
-          // Add hash (#) to URL when done scrolling
-          window.location.hash = hash;
-        });
-      }
-    });
-  })
-}(jQuery));
+//     if (btnHamburger.classList.contains('fa-bars')) {
+//         btnHamburger.classList.remove('fa-bars')
+//         btnHamburger.classList.add('fa-times')
+//         navUl.classList.add('display-nav-list')
+//     } else {
+//         btnHamburger.classList.remove('fa-times')
+//         btnHamburger.classList.add('fa-bars')
+//         navUl.classList.remove('display-nav-list')
+//     }
+// }
 
-/**document.addEventListener("DOMContentLoaded", function () 
-{
-  // Initialize Tooltip
-  var tooltips = document.querySelectorAll('[data-toggle="tooltip"]');
-  tooltips.forEach(function (tooltip) {
-    new bootstrap.Tooltip(tooltip);
-  });
+// btnHamburger.addEventListener('click', displayList)
 
-  // Hide navbar
-  var navbar = document.querySelector(".navbar-fade");
-  if (navbar) 
-  {
-    navbar.style.display = "none";
-  }
+// const scrollUp = () => {
+//     const btnScrollTop = document.querySelector('.scroll-top')
 
-  // Handle header click
-  var headers = document.querySelectorAll(".header");
-  headers.forEach(function (header) 
-  {
-    header.addEventListener("click", function () {
-      var graphics = header.nextElementSibling;
-      var graphics2 = graphics.nextElementSibling;
+//     if (
+//         body.scrollTop > 500 ||
+//         document.documentElement.scrollTop > 500
+//     ) {
+//         btnScrollTop.style.display = 'block'
+//     } else {
+//         btnScrollTop.style.display = 'none'
+//     }
+// }
 
-      // Toggle slide
-      toggleSlide(graphics);
-      toggleSlide(graphics2);
-    });
-  });
+// document.addEventListener('scroll', scrollUp)
 
-  function toggleSlide(element) {
-    if (window.getComputedStyle(element).display === "none") 
-    {
-      element.style.display = "block";
-    } else {
-      element.style.display = "none";
-    }
-  }
 
-  // Fade in navbar on scroll
-  var navbarFade = document.querySelector('.navbar-fade');
-  if (navbarFade) {
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 90) {
-        navbarFade.style.display = "block";
-      } else {
-        navbarFade.style.display = "none";
-      }
-    });
-  }
-
-  // Smooth scrolling for navbar and footer links
-  var navbarLinks = document.querySelectorAll(".navbar a");
-  var footerLink = document.querySelector("footer a[href='#myPage']");
-
-  function scrollToElement(element) {
-    var targetId = element.getAttribute("href").substring(1);
-    var targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      document.querySelector(".navbar-fade").style.display = "none";
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth"
-      });
-    }
-  }
-
-  if (navbarLinks) {
-    navbarLinks.forEach(function (link) {
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        scrollToElement(link);
-      });
-    });
-  }
-
-  if (footerLink) {
-    footerLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      scrollToElement(footerLink);
-    });
-  }
-});**/
 

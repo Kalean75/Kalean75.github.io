@@ -10,8 +10,8 @@
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 	<link type="text/css" rel="stylesheet" href="css/projstyle.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+	<!-- <script src="js/script.js"></script> -->
 </head>'
 ?>
