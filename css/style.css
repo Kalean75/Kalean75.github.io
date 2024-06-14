@@ -200,7 +200,7 @@ h4 {
   float: right;
 }
 
-.project-stack {
+/* .project-stack {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -211,7 +211,7 @@ h4 {
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--txt-clr-alt);
-}
+} */
 
 .navbar-nav li a:hover {
   color: #fff !important;
@@ -307,6 +307,7 @@ h1 {
 
 p {
   font-size: min(2vw, 16px);
+  text-align: center;
 }
 
 .description {
