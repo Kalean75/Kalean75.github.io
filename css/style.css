@@ -58,15 +58,16 @@ html {
 #carousel {
   background: #e4e5e6;
   width: 50%;
-  height: auto;
+  max-width: auto;
+  max-height: auto;
   text-align: center;
   margin: auto;
 }
 
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
-  max-height: 300px;
-  min-height: 300px;
+  max-height: auto;
+  min-height: auto;
   height: auto;
   width: auto;
   display: block;
